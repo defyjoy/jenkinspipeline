@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jenkinspipeline:
+    image: ${DOCKER_REGISTRY-}jenkinspipeline
+    build:
+      context: .
+      dockerfile: JenkinsPipeline/Dockerfile
