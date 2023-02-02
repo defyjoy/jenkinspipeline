@@ -28,10 +28,10 @@
       steps {
         container('maven') {
         //   sh 'mvn -version'
-            sh "echo 'hello world'"
+            sh "echo hello world"
         }
         container('busybox') {
-          sh "echo 'hello world'"
+          sh "echo hello world"
         }
       }
     }
